@@ -1,7 +1,9 @@
+
 import unittest
 
 # This is the class we want to test. So, we need to import it
 import Person as PersonClass
+
 
 class Test(unittest.TestCase):
     """
@@ -53,6 +55,7 @@ class Test(unittest.TestCase):
                 # if length exceeds then check the 'no such user' type message
                 self.assertEqual('There is no such user', self.person.get_name(i))
         print("\nFinish get_name test\n")
+
 
 if __name__ == '__main__':
     # begin the unittest.main()
