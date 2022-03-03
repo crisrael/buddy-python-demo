@@ -7,7 +7,6 @@ class Testing(unittest.TestCase):
         b = 'some'
         self.assertEqual(a, b)
 
-<<<<<<< HEAD
     # test case function to check the Person.set_name function
     def test_0_set_name(self):
         print("Start set_name test\n")
@@ -45,7 +44,8 @@ class Testing(unittest.TestCase):
             if i < length:
                 # if the two name not matches it will fail the test case
                 # self.assertEqual(self.user_name[i], self.person.get_name(self.user_id[i]))
-                self.assertEqual(self.user_name[i], "asdfasdfasdfasdf")
+                # self.assertEqual(self.user_name[i], "asdfasdfasdfasdf")
+                self.assertFalse(true)
             else:
                 print("Testing for get_name no user test")
                 # if length exceeds then check the 'no such user' type message
